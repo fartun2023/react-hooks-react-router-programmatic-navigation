@@ -18,9 +18,10 @@ function Login({ setIsLoggedIn }) {
   function handleSubmit(e) {
     e.preventDefault();
 
+    // Here you can send a request to a server to check the credentials
+    // For example, you can use fetch or axios to send a POST request with the formData
+    // If the credentials are correct, you can set setIsLoggedIn to true and redirect the user to the home page
     setIsLoggedIn(true);
-
-    // after logging the user in, redirect to the home page!
     history.push("/");
   }
 
